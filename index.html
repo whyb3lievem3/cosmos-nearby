@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmos Nearby — Educational Astronomy Lecture Hall</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ═══════════ HEADER / NAV ═══════════ -->
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="Cosmos Nearby Home">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <span class="logo-text">Cosmos Nearby</span>
+      </a>
+
+      <input type="checkbox" id="burger-toggle" class="burger-checkbox" aria-hidden="true">
+      <label for="burger-toggle" class="burger-btn" aria-label="Toggle menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </label>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#schedule">Playbill</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#podcasts">Podcasts</a></li>
+        <li>
+          <a href="#tickets" class="cta-nav">Buy a Ticket</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════ HERO SECTION ═══════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <!-- animated star particles (CSS-only) -->
+      <span class="star s1" aria-hidden="true"></span>
+      <span class="star s2" aria-hidden="true"></span>
+      <span class="star s3" aria-hidden="true"></span>
+      <span class="star s4" aria-hidden="true"></span>
+      <span class="star s5" aria-hidden="true"></span>
+      <span class="star s6" aria-hidden="true"></span>
+      <span class="star s7" aria-hidden="true"></span>
+
+      <span class="orbit-ring r1" aria-hidden="true"></span>
+      <span class="orbit-ring r2" aria-hidden="true"></span>
+
+      <article class="hero-content">
+        <p class="hero-tag">Free open lectures every Saturday</p>
+        <h1 class="hero-title">
+          Simply About<br>
+          the Structure of<br>
+          <span class="gradient-text">the Universe</span>
+        </h1>
+        <p class="hero-desc">
+          Join world-class astrophysicists breaking down black holes,
+          dark matter, and the cosmic microwave background — no PhD required.
+        </p>
+        <a href="#schedule" class="btn-primary">
+          <span>Explore Schedule</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+      </article>
+    </section>
+
+    <!-- ═══════════ GRID SECTION — LECTURES ═══════════ -->
+    <section class="lectures" id="schedule" aria-label="Lecture schedule">
+      <header class="section-head">
+        <p class="section-tag">Upcoming events</p>
+        <h2 class="section-title">Lecture Playbill</h2>
+      </header>
+
+      <article class="card" data-status="open">
+        <time class="card-date" datetime="2026-11-09T18:00">
+          <span class="day">09</span>
+          <span class="month">Nov</span>
+        </time>
+        <h3 class="card-title">Black Holes: The Universe's Recycling Machines</h3>
+        <p class="card-speaker">
+          <span class="degree">Ph.D.</span> Elena Kosareva
+        </p>
+        <footer class="card-meta">
+          <span class="time-badge">18:00 — 20:00</span>
+          <span class="seats seats-open">42 seats left</span>
+        </footer>
+      </article>
+
+      <article class="card" data-status="open">
+        <time class="card-date" datetime="2026-11-16T18:00">
+          <span class="day">16</span>
+          <span class="month">Nov</span>
+        </time>
+        <h3 class="card-title">Dark Matter: What We Cannot See But Can Measure</h3>
+        <p class="card-speaker">
+          <span class="degree">Dr.Sci.</span> Arman Zhumabekov
+        </p>
+        <footer class="card-meta">
+          <span class="time-badge">18:00 — 20:30</span>
+          <span class="seats seats-open">28 seats left</span>
+        </footer>
+      </article>
+
+      <article class="card" data-status="few">
+        <time class="card-date" datetime="2026-11-23T17:00">
+          <span class="day">23</span>
+          <span class="month">Nov</span>
+        </time>
+        <h3 class="card-title">Exoplanets: Searching for a Second Earth</h3>
+        <p class="card-speaker">
+          <span class="degree">Prof.</span> Takashi Morimoto
+        </p>
+        <footer class="card-meta">
+          <span class="time-badge">17:00 — 19:00</span>
+          <span class="seats seats-few">5 seats left</span>
+        </footer>
+      </article>
+
+      <article class="card" data-status="closed">
+        <time class="card-date" datetime="2026-11-30T18:00">
+          <span class="day">30</span>
+          <span class="month">Nov</span>
+        </time>
+        <h3 class="card-title">Gravitational Waves: Listening to the Cosmos</h3>
+        <p class="card-speaker">
+          <span class="degree">Ph.D.</span> Sara Lindqvist
+        </p>
+        <footer class="card-meta">
+          <span class="time-badge">18:00 — 20:00</span>
+          <span class="seats seats-closed">Sold out</span>
+        </footer>
+      </article>
+
+      <article class="card" data-status="open">
+        <time class="card-date" datetime="2026-12-07T16:00">
+          <span class="day">07</span>
+          <span class="month">Dec</span>
+        </time>
+        <h3 class="card-title">Cosmic Microwave Background: The Echo of the Big Bang</h3>
+        <p class="card-speaker">
+          <span class="degree">Acad.</span> Dmitry Volkov
+        </p>
+        <footer class="card-meta">
+          <span class="time-badge">16:00 — 18:30</span>
+          <span class="seats seats-open">60 seats left</span>
+        </footer>
+      </article>
+
+      <article class="card" data-status="open">
+        <time class="card-date" datetime="2026-12-14T18:00">
+          <span class="day">14</span>
+          <span class="month">Dec</span>
+        </time>
+        <h3 class="card-title">Neutron Stars & Pulsars: Cosmic Lighthouses</h3>
+        <p class="card-speaker">
+          <span class="degree">Ph.D.</span> Aisha Bekturganova
+        </p>
+        <footer class="card-meta">
+          <span class="time-badge">18:00 — 20:00</span>
+          <span class="seats seats-open">35 seats left</span>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ═══════════ FEEDBACK FORM ═══════════ -->
+    <section class="register" id="tickets" aria-label="Registration form">
+      <header class="section-head">
+        <p class="section-tag">Don't miss out</p>
+        <h2 class="section-title">Register for Online Broadcasts</h2>
+      </header>
+
+      <form class="reg-form" action="#" method="post" novalidate>
+        <label class="form-field">
+          <span class="field-label">Your name</span>
+          <input
+            type="text"
+            name="name"
+            placeholder="e.g. Damir Makhamet"
+            required
+            minlength="2"
+            autocomplete="name"
+          >
+          <span class="field-hint">At least 2 characters</span>
+        </label>
+
+        <label class="form-field">
+          <span class="field-label">Email address</span>
+          <input
+            type="email"
+            name="email"
+            placeholder="damir@example.com"
+            required
+            autocomplete="email"
+          >
+          <span class="field-hint">We'll send you the broadcast link</span>
+        </label>
+
+        <label class="form-field">
+          <span class="field-label">Phone (optional)</span>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+7 (___) ___-__-__"
+            pattern="[\+]?[0-9\s\-\(\)]{7,18}"
+            autocomplete="tel"
+          >
+          <span class="field-hint">For SMS reminders</span>
+        </label>
+
+        <button type="submit" class="btn-primary btn-submit">
+          <span>Get Free Access</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="site-footer" id="podcasts">
+    <nav class="footer-grid" aria-label="Footer navigation">
+
+      <section class="footer-col">
+        <h3 class="footer-heading">Cosmos Nearby</h3>
+        <p class="footer-about">
+          A non-profit popular science initiative bringing astrophysics
+          to everyone through free open lectures and podcasts.
+        </p>
+      </section>
+
+      <section class="footer-col">
+        <h3 class="footer-heading">Partner Observatories</h3>
+        <ul class="footer-list" role="list">
+          <li><a href="#">Assy-Turgen Observatory</a></li>
+          <li><a href="#">Tien Shan Station</a></li>
+          <li><a href="#">Fesenkov Institute</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h3 class="footer-heading">Connect</h3>
+        <ul class="footer-list" role="list">
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h3 class="footer-heading">Appearance</h3>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-switch"
+          aria-label="Toggle light/dark theme"
+        >
+          <span class="toggle-track">
+            <span class="toggle-sun" aria-hidden="true">☀</span>
+            <span class="toggle-moon" aria-hidden="true">☾</span>
+            <span class="toggle-thumb"></span>
+          </span>
+        </button>
+      </section>
+    </nav>
+
+    <p class="copyright">
+      © 2026 Cosmos Nearby. All rights reserved. Built with 🔭 and curiosity.
+    </p>
+  </footer>
+
+  <script>
+    /* ── Theme toggle (minimal JS — everything else is pure CSS) ── */
+    const sw = document.getElementById('theme-switch');
+    sw.addEventListener('click', () => {
+      const html = document.documentElement;
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+    });
+  </script>
+</body>
+</html>
