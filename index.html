@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cosmos Nearby — Educational Astronomy Lecture Hall</title>
+  <title>Aphelion — Astronomy Lecture Hall</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- ═══════════ HEADER / NAV ═══════════ -->
   <header class="site-header">
     <nav class="nav-bar" aria-label="Main navigation">
-      <a href="#" class="logo" aria-label="Cosmos Nearby Home">
-        <span class="logo-icon" aria-hidden="true">✦</span>
-        <span class="logo-text">Cosmos Nearby</span>
+      <a href="#" class="logo" aria-label="Aphelion Home">
+        <span class="logo-planet" aria-hidden="true"></span>
+        <span class="logo-text">APHELION</span>
       </a>
 
       <input type="checkbox" id="burger-toggle" class="burger-checkbox" aria-hidden="true">
@@ -26,13 +26,13 @@
       </label>
 
       <ul class="nav-links" role="list">
-        <li><a href="#schedule">Playbill</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#podcasts">Podcasts</a></li>
-        <li>
-          <a href="#tickets" class="cta-nav">Buy a Ticket</a>
-        </li>
+        <li><a href="#schedule">What's on</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#visit">Your visit</a></li>
+        <li><a href="#schools">Schools</a></li>
       </ul>
+
+      <a href="#tickets" class="cta-nav">Book a Ticket</a>
     </nav>
   </header>
 
@@ -40,139 +40,185 @@
 
     <!-- ═══════════ HERO SECTION ═══════════ -->
     <section class="hero" id="home" aria-label="Hero">
-      <!-- animated star particles (CSS-only) -->
-      <span class="star s1" aria-hidden="true"></span>
-      <span class="star s2" aria-hidden="true"></span>
-      <span class="star s3" aria-hidden="true"></span>
-      <span class="star s4" aria-hidden="true"></span>
-      <span class="star s5" aria-hidden="true"></span>
-      <span class="star s6" aria-hidden="true"></span>
-      <span class="star s7" aria-hidden="true"></span>
-
-      <span class="orbit-ring r1" aria-hidden="true"></span>
-      <span class="orbit-ring r2" aria-hidden="true"></span>
-
       <article class="hero-content">
-        <p class="hero-tag">Free open lectures every Saturday</p>
-        <h1 class="hero-title">
-          Simply About<br>
-          the Structure of<br>
-          <span class="gradient-text">the Universe</span>
-        </h1>
+        <h1 class="hero-title">The universe.<br>A little closer.</h1>
         <p class="hero-desc">
-          Join world-class astrophysicists breaking down black holes,
-          dark matter, and the cosmic microwave background — no PhD required.
+          Explore the frontiers of space through free public lectures,
+          immersive planetarium shows, and conversations with leading astrophysicists.
         </p>
         <a href="#schedule" class="btn-primary">
           <span>Explore Schedule</span>
           <span class="btn-arrow" aria-hidden="true">→</span>
         </a>
       </article>
+      <aside class="hero-planet" aria-hidden="true">
+        <span class="planet mars"></span>
+      </aside>
+    </section>
+
+    <!-- ═══════════ INTRO ═══════════ -->
+    <section class="intro" aria-label="Introduction">
+      <h2 class="intro-title">Space is for everyone.</h2>
+      <p class="intro-text">
+        Aphelion is a non-profit popular science initiative dedicated to making
+        astrophysics accessible. We host free open lectures every Saturday,
+        bringing together curious minds and world-class researchers under one roof.
+      </p>
+    </section>
+
+    <!-- ═══════════ BIG IDEAS ═══════════ -->
+    <section class="big-ideas" id="explore" aria-label="Big ideas">
+      <header class="section-head">
+        <h2 class="section-title">Big ideas.<br>Live in the room.</h2>
+      </header>
+      <article class="idea-cards">
+        <figure class="idea-card">
+          <span class="planet-sm moon" aria-hidden="true"></span>
+          <figcaption>
+            <h3>Planetarium shows</h3>
+            <p>Full-dome immersive journeys through the solar system and beyond.</p>
+          </figcaption>
+        </figure>
+        <figure class="idea-card">
+          <span class="planet-sm sun" aria-hidden="true"></span>
+          <figcaption>
+            <h3>Open lectures</h3>
+            <p>Free weekly talks by researchers from observatories worldwide.</p>
+          </figcaption>
+        </figure>
+      </article>
     </section>
 
     <!-- ═══════════ GRID SECTION — LECTURES ═══════════ -->
     <section class="lectures" id="schedule" aria-label="Lecture schedule">
       <header class="section-head">
-        <p class="section-tag">Upcoming events</p>
-        <h2 class="section-title">Lecture Playbill</h2>
+        <h2 class="section-title">Where will your<br>mind wander?</h2>
       </header>
 
       <article class="card" data-status="open">
+        <span class="card-planet p1" aria-hidden="true"></span>
         <time class="card-date" datetime="2026-11-09T18:00">
           <span class="day">09</span>
           <span class="month">Nov</span>
         </time>
         <h3 class="card-title">Black Holes: The Universe's Recycling Machines</h3>
-        <p class="card-speaker">
-          <span class="degree">Ph.D.</span> Elena Kosareva
-        </p>
+        <p class="card-speaker"><span class="degree">Ph.D.</span> Elena Kosareva</p>
         <footer class="card-meta">
-          <span class="time-badge">18:00 — 20:00</span>
+          <span class="time-badge">18 : 00 — 20 : 00</span>
           <span class="seats seats-open">42 seats left</span>
         </footer>
       </article>
 
       <article class="card" data-status="open">
+        <span class="card-planet p2" aria-hidden="true"></span>
         <time class="card-date" datetime="2026-11-16T18:00">
           <span class="day">16</span>
           <span class="month">Nov</span>
         </time>
         <h3 class="card-title">Dark Matter: What We Cannot See But Can Measure</h3>
-        <p class="card-speaker">
-          <span class="degree">Dr.Sci.</span> Arman Zhumabekov
-        </p>
+        <p class="card-speaker"><span class="degree">Dr.Sci.</span> Arman Zhumabekov</p>
         <footer class="card-meta">
-          <span class="time-badge">18:00 — 20:30</span>
+          <span class="time-badge">18 : 00 — 20 : 30</span>
           <span class="seats seats-open">28 seats left</span>
         </footer>
       </article>
 
       <article class="card" data-status="few">
+        <span class="card-planet p3" aria-hidden="true"></span>
         <time class="card-date" datetime="2026-11-23T17:00">
           <span class="day">23</span>
           <span class="month">Nov</span>
         </time>
         <h3 class="card-title">Exoplanets: Searching for a Second Earth</h3>
-        <p class="card-speaker">
-          <span class="degree">Prof.</span> Takashi Morimoto
-        </p>
+        <p class="card-speaker"><span class="degree">Prof.</span> Takashi Morimoto</p>
         <footer class="card-meta">
-          <span class="time-badge">17:00 — 19:00</span>
+          <span class="time-badge">17 : 00 — 19 : 00</span>
           <span class="seats seats-few">5 seats left</span>
         </footer>
       </article>
 
       <article class="card" data-status="closed">
+        <span class="card-planet p4" aria-hidden="true"></span>
         <time class="card-date" datetime="2026-11-30T18:00">
           <span class="day">30</span>
           <span class="month">Nov</span>
         </time>
         <h3 class="card-title">Gravitational Waves: Listening to the Cosmos</h3>
-        <p class="card-speaker">
-          <span class="degree">Ph.D.</span> Sara Lindqvist
-        </p>
+        <p class="card-speaker"><span class="degree">Ph.D.</span> Sara Lindqvist</p>
         <footer class="card-meta">
-          <span class="time-badge">18:00 — 20:00</span>
+          <span class="time-badge">18 : 00 — 20 : 00</span>
           <span class="seats seats-closed">Sold out</span>
         </footer>
       </article>
 
       <article class="card" data-status="open">
+        <span class="card-planet p5" aria-hidden="true"></span>
         <time class="card-date" datetime="2026-12-07T16:00">
           <span class="day">07</span>
           <span class="month">Dec</span>
         </time>
-        <h3 class="card-title">Cosmic Microwave Background: The Echo of the Big Bang</h3>
-        <p class="card-speaker">
-          <span class="degree">Acad.</span> Dmitry Volkov
-        </p>
+        <h3 class="card-title">Cosmic Microwave Background: Echo of the Big Bang</h3>
+        <p class="card-speaker"><span class="degree">Acad.</span> Dmitry Volkov</p>
         <footer class="card-meta">
-          <span class="time-badge">16:00 — 18:30</span>
+          <span class="time-badge">16 : 00 — 18 : 30</span>
           <span class="seats seats-open">60 seats left</span>
         </footer>
       </article>
 
       <article class="card" data-status="open">
+        <span class="card-planet p6" aria-hidden="true"></span>
         <time class="card-date" datetime="2026-12-14T18:00">
           <span class="day">14</span>
           <span class="month">Dec</span>
         </time>
         <h3 class="card-title">Neutron Stars & Pulsars: Cosmic Lighthouses</h3>
-        <p class="card-speaker">
-          <span class="degree">Ph.D.</span> Aisha Bekturganova
-        </p>
+        <p class="card-speaker"><span class="degree">Ph.D.</span> Aisha Bekturganova</p>
         <footer class="card-meta">
-          <span class="time-badge">18:00 — 20:00</span>
+          <span class="time-badge">18 : 00 — 20 : 00</span>
           <span class="seats seats-open">35 seats left</span>
         </footer>
       </article>
     </section>
 
-    <!-- ═══════════ FEEDBACK FORM ═══════════ -->
+    <!-- ═══════════ EXPERIENCE ═══════════ -->
+    <section class="experience" id="visit" aria-label="Experience">
+      <article class="exp-block">
+        <h2 class="section-title">Bring the classroom<br>to the cosmos.</h2>
+        <p class="exp-text">
+          Our lecture hall seats 120 guests beneath a full-dome planetarium ceiling.
+          Every seat offers an unobstructed view of the speaker stage and the projected sky above.
+        </p>
+      </article>
+      <article class="exp-block">
+        <h2 class="section-title">Real science.<br>Human stories.</h2>
+        <p class="exp-text">
+          Each speaker is an active researcher — no actors, no scripts. They share
+          their own discoveries, mistakes, and breakthroughs in plain language.
+        </p>
+      </article>
+    </section>
+
+    <!-- ═══════════ FAQ ═══════════ -->
+    <section class="faq" id="schools" aria-label="FAQ">
+      <h2 class="section-title">Good questions.</h2>
+      <article class="faq-item">
+        <h3 class="faq-q">Are the lectures really free?</h3>
+        <p class="faq-a">Yes. Aphelion is funded by grants and donations. Registration is required only to manage seat capacity.</p>
+      </article>
+      <article class="faq-item">
+        <h3 class="faq-q">Can I attend online?</h3>
+        <p class="faq-a">Selected lectures are broadcast live. Register with your email and we'll send you the streaming link 30 minutes before the event.</p>
+      </article>
+      <article class="faq-item">
+        <h3 class="faq-q">Is it suitable for children?</h3>
+        <p class="faq-a">Absolutely. Our speakers adapt their explanations for all ages. Children under 12 must be accompanied by an adult.</p>
+      </article>
+    </section>
+
+    <!-- ═══════════ REGISTRATION FORM ═══════════ -->
     <section class="register" id="tickets" aria-label="Registration form">
       <header class="section-head">
-        <p class="section-tag">Don't miss out</p>
-        <h2 class="section-title">Register for Online Broadcasts</h2>
+        <h2 class="section-title">Your next big idea<br>starts with a seat.</h2>
       </header>
 
       <form class="reg-form" action="#" method="post" novalidate>
@@ -186,7 +232,6 @@
             minlength="2"
             autocomplete="name"
           >
-          <span class="field-hint">At least 2 characters</span>
         </label>
 
         <label class="form-field">
@@ -198,7 +243,6 @@
             required
             autocomplete="email"
           >
-          <span class="field-hint">We'll send you the broadcast link</span>
         </label>
 
         <label class="form-field">
@@ -210,11 +254,10 @@
             pattern="[\+]?[0-9\s\-\(\)]{7,18}"
             autocomplete="tel"
           >
-          <span class="field-hint">For SMS reminders</span>
         </label>
 
         <button type="submit" class="btn-primary btn-submit">
-          <span>Get Free Access</span>
+          <span>Book a Seat</span>
           <span class="btn-arrow" aria-hidden="true">→</span>
         </button>
       </form>
@@ -223,19 +266,10 @@
   </main>
 
   <!-- ═══════════ FOOTER ═══════════ -->
-  <footer class="site-footer" id="podcasts">
+  <footer class="site-footer">
     <nav class="footer-grid" aria-label="Footer navigation">
-
       <section class="footer-col">
-        <h3 class="footer-heading">Cosmos Nearby</h3>
-        <p class="footer-about">
-          A non-profit popular science initiative bringing astrophysics
-          to everyone through free open lectures and podcasts.
-        </p>
-      </section>
-
-      <section class="footer-col">
-        <h3 class="footer-heading">Partner Observatories</h3>
+        <h3 class="footer-heading">Visit</h3>
         <ul class="footer-list" role="list">
           <li><a href="#">Assy-Turgen Observatory</a></li>
           <li><a href="#">Tien Shan Station</a></li>
@@ -261,21 +295,19 @@
           aria-label="Toggle light/dark theme"
         >
           <span class="toggle-track">
-            <span class="toggle-sun" aria-hidden="true">☀</span>
-            <span class="toggle-moon" aria-hidden="true">☾</span>
+            <span class="toggle-icon sun" aria-hidden="true">☀</span>
+            <span class="toggle-icon moon" aria-hidden="true">☾</span>
             <span class="toggle-thumb"></span>
           </span>
         </button>
       </section>
     </nav>
 
-    <p class="copyright">
-      © 2026 Cosmos Nearby. All rights reserved. Built with 🔭 and curiosity.
-    </p>
+    <p class="footer-brand">APHELION</p>
+    <p class="copyright">© 2026 Aphelion Astronomy Lecture Hall. All rights reserved.</p>
   </footer>
 
   <script>
-    /* ── Theme toggle (minimal JS — everything else is pure CSS) ── */
     const sw = document.getElementById('theme-switch');
     sw.addEventListener('click', () => {
       const html = document.documentElement;
@@ -285,3 +317,4 @@
   </script>
 </body>
 </html>
+
